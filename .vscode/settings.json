@@ -1,0 +1,12 @@
+{
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/home/prog",
+            "binaryPath": "/home/prog/main",
+            "binaryArgs": []
+        }
+    ],
+    "files.associations": {
+        "iostream": "cpp"
+    }
+}
