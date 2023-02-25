@@ -5,5 +5,8 @@
             "binaryPath": "/home/prog/main",
             "binaryArgs": []
         }
-    ]
+    ],
+    "files.associations": {
+        "iostream": "cpp"
+    }
 }

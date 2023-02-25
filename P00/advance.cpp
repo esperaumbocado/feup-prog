@@ -55,5 +55,6 @@ int main(){
     cout << d << ' ' << m << ' ' << y << '\n';
     cout << d << ' ' << m << ' ' << y << '\n';
     cout << d << ' ' << m << ' ' << y << '\n';
+    cout << d << ' ' << m << ' ' << y << '\n';
     return 0;
 }
