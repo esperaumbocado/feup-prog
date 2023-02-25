@@ -54,5 +54,6 @@ int main(){
     advance(365 + 5, d, m, y); 
     cout << d << ' ' << m << ' ' << y << '\n';
     cout << d << ' ' << m << ' ' << y << '\n';
+    cout << d << ' ' << m << ' ' << y << '\n';
     return 0;
 }
