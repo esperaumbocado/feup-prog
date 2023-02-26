@@ -1,17 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-    int r = 123;
-    while (true) {
-        if (r%3 == 0) {
-            r+=2;
-            continue;
-        }
-        if (r%3 == 1) {
-            break;
-        }
-        r += r % 2 == 0 ? 1 : 2;
+namespace a {
+    namespace b {
+        int f(int x, int y=1) { return x + y;}
     }
-    cout << r;
+    int f(int x) { return x > 1 ? x + 1 : a ::b::f(x - 1);}
+}
+
+int g(int x) {
+    return x % 3 == 0 ? a::b::f(x,3) : a::f(x);
+}
+
+int main(){
+    cout << g(1) << g(2) << g(3);
+    return 0;
 }
