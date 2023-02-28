@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-unsigned long bc(unsigned long n, unsigned long k) {
-    if (k > n) {
+unsigned long bc(unsigned long j, unsigned long l) {
+    if (l > j) {
         return 0;
     }
-    if (k == 0 || k == n) {
+    if (l == 0 || l == j) {
         return 1;
     }
-    return bc(n - 1, k - 1) * n / k;
+    return bc(j - 1, l - 1) * j / l;
 }
 
 int main(){
