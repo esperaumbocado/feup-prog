@@ -2,17 +2,15 @@
 using namespace std;
 
 int main(){
-    struct data1 {
+    struct data {
         double x;
         double y;
     };
 
-    struct data2 {
-        data1 a;
-        data1 b;
-        data1 c;
-    };
+    data a {1.2,1.3},b {3.1,5.3};
+    void f(const data& a,data& b) {
+        b.x = a.y = 0;
+    }
 
-    cout << sizeof(data1) << ' ' << sizeof(data2);
     return 0;
 }
