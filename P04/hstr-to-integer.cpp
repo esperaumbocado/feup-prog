@@ -1,5 +1,4 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
 
@@ -7,10 +6,7 @@ int size_of_hstr(const char hstr[]){
 
     int counter = 0;
 
-    for (int i=0;i<100000;i++){
-        if (hstr[i]==0){
-            break;
-        }
+    for (int i=0;hstr[i]!='\0';i++){
         counter+=1;
     }
 
@@ -27,7 +23,7 @@ unsigned long hstr_to_integer(const char hstr[]){
 
         char temp;
         int number;
-        temp = hstr[len-i-1];
+        temp = hstr[i];
 
         if (temp == '0'){number=0;}
         if (temp == '1'){number=1;}
@@ -46,7 +42,7 @@ unsigned long hstr_to_integer(const char hstr[]){
         if (temp == 'E' || temp == 'e'){number = 14;}
         if (temp == 'F' || temp == 'f'){number = 15;}
 
-        result += number * pow(16,i);
+        result = result * 16 + number;
     }
 
     return result;
@@ -57,9 +53,9 @@ int main(){
 
     cout << hstr_to_integer("0") << '\n';
     cout << hstr_to_integer("A") << '\n';
-    cout << hstr_to_integer("a666666666662222") << '\n';
-    cout << size_of_hstr("a666666666662222");
-
+    cout << hstr_to_integer("ffffffffffffffff") << '\n';
+    cout << hstr_to_integer("CafeBabe2022") << '\n';
+    cout << size_of_hstr("ffffffffffffffff");
 
 
     return 0;
