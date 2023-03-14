@@ -9,4 +9,5 @@
 *.pif
 *.vb
 *.wsf
-
+teorica.cpp
+Makefile
