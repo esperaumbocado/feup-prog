@@ -1,12 +1,12 @@
-MakeFile
-P00/MakeFile
-P01/MakeFile
-P02/MakeFile
-P03/MakeFile
-P04/MakeFile
-P05/MakeFile
-P06/MakeFile
-P07/MakeFile
-P08/MakeFile
-teorica
-teorica.cpp
+### Executable ###
+*.app
+*.bat
+*.cgi
+*.com
+*.exe
+*.gadget
+*.jar
+*.pif
+*.vb
+*.wsf
+
