@@ -1,16 +1,25 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    struct data {
-        double x;
-        double y;
-    };
 
-    data a {1.2,1.3},b {3.1,5.3};
-    void f(const data& a,data& b) {
-        b.x = a.y = 0;
-    }
+
+int f(const int a[], int b[]){
+    int c[] {0,1,2};
+        
+    for (int v : b) c[0] += v;
+    for (int& v : c) v = b[0];
+
+
+    return c[0] + c[1] + c[2];
+}
+
+
+
+
+
+int main(){
+
+    cout << f({0,1},{0,2});
 
     return 0;
 }
