@@ -1,18 +1,25 @@
 #include <iostream>
 using namespace std;
 
+
+
+int f(const int a[], int b[]){
+    int c[] {0,1,2};
+        
+    for (int v : b) c[0] += v;
+    for (int& v : c) v = b[0];
+
+
+    return c[0] + c[1] + c[2];
+}
+
+
+
+
+
 int main(){
-    struct data1 {
-        double x;
-        double y;
-    };
 
-    struct data2 {
-        data1 a;
-        data1 b;
-        data1 c;
-    };
+    cout << f({0,1},{0,2});
 
-    cout << sizeof(data1) << ' ' << sizeof(data2);
     return 0;
 }
