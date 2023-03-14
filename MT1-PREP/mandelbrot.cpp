@@ -2,9 +2,6 @@
 #include "complex.h"
 using namespace std;
 
-
-
-
 complex add_complex(const complex a,const complex b){
 
     complex result;

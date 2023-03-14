@@ -8,7 +8,6 @@ int filter_duplicates(const int a[], int n, int b[]){
 
     for (int i=0;i<n;i++){
 
-
         if (i==0){
             b[internal_counter] = a[i];
             internal_counter++;
