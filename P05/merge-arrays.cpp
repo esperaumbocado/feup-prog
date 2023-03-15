@@ -41,7 +41,7 @@ int main(){
 
     { const int NA = 4, NB = 6;
   int a[NA] = { 1, 2, 4, 7};
-  int b[NB] = { 0, 3, 5, 6, 8, 9};
+  int b[NB] = { 0, 3, 5, 6, 8, 1};
   int* c = merge_arrays(a, NA, b, NB);
   print_array(c, NA+NB);
   delete [] c; }
