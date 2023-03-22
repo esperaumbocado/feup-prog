@@ -1,9 +1,22 @@
 #include <iostream>
 using namespace std;
 
+
+const int size_of_array(const char* pa[]){
+    int i = 0;
+
+    while(pa[i]!=nullptr){
+        i++;
+    }
+
+    const int n = i;
+    return n;
+}
+
 const char* longest(const char* pa[]){
 
-    int size_of_strings[] = {0};
+    const int n = size_of_array(pa);
+    int size_of_strings[n] = {0};
     int i,position_of_max;
 
     for (i=0;pa[i]!=nullptr;i++){
